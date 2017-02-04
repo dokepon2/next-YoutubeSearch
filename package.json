@@ -1,0 +1,17 @@
+{
+  "name": "next_youtubeSearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "next",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^1.2.3",
+    "youtube-api-search": "0.0.5"
+  }
+}
