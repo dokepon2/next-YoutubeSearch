@@ -8,21 +8,22 @@ export default class SearchBar extends Component {
 
         this.state = { term: '' };
 
-        this.onInputChange = this.onInputChange.bind(this);
 
     }
 
     render() {
         return (
-            <div>
+            <div className="search-bar" >
+                <label>Search  </label>{"  "}
                 <input 
                     value={this.state.term}
-                    onChange={this.onInputChange} />
+                    onChange={e => this.onInputChange(e.target.value)} />
             </div>
         );
     }
 
-    onInputChange(e) {
-        this.setState({ term: e.target.value });
+    onInputChange(term) {
+        this.setState({ term });
+        this.props.onSearchTermChange(term);
     }
 }
